@@ -1,11 +1,11 @@
 #!/bin/bash
-
+sudo apt update -y
+sudo apt install unzip -y
 cd ~
 unzip makhachev.zip && rm -rf makhachev.zip
 
 # Update package lists
 echo "Updating package lists..."
-sudo apt update -y
 
 # Install Python and pip
 echo "Installing Python3 and pip..."
